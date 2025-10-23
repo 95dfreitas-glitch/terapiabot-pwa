@@ -1,1 +1,36 @@
-
+{
+  "name": "TerapiaBot v2 - Bem-Estar Emocional",
+  "short_name": "TerapiaBot",
+  "description": "Seu companheiro de bem-estar emocional com técnicas de TCC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5B8FA3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "medical"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Iniciar Chat",
+      "short_name": "Chat",
+      "description": "Começar conversa com TerapiaBot",
+      "url": "/#chat",
+      "icons": [{ "src": "icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

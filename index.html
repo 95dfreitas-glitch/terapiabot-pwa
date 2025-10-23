@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TerapiaBot v2 - Seu companheiro de bem-estar emocional com técnicas de TCC">
+    <meta name="theme-color" content="#5B8FA3">
+    <title>TerapiaBot v2 - Seu Companheiro de Bem-Estar Emocional</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512x512.png">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Install Button -->
+    <button id="installButton" class="install-btn" style="display: none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Instalar App
+    </button>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" fill="#5B8FA3"/>
+                    <text x="20" y="27" font-size="20" fill="white" text-anchor="middle" font-weight="bold">TB</text>
+                </svg>
+                <h1>TerapiaBot v2</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Início</a>
+                <a href="#features">Recursos</a>
+                <a href="#chat">Chat</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Seu Companheiro Compassivo de Bem-Estar Emocional</h2>
+                <p class="hero-description">
+                    O TerapiaBot v2 combina técnicas comprovadas de Terapia Cognitivo-Comportamental (TCC) 
+                    com IA empática para apoiar sua jornada de saúde mental. Disponível 24/7, sempre que você precisar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#chat" class="btn btn-primary">Começar a Conversar</a>
+                    <a href="#features" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="card-icon">💚</div>
+                    <h3>Sempre Aqui Para Você</h3>
+                    <p>Suporte compassivo 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Como o TerapiaBot v2 Te Ajuda</h2>
+            <p class="section-subtitle">Técnicas baseadas em evidências científicas com IA para apoiar seu bem-estar emocional</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Técnicas de TCC</h3>
+                    <p>Aplique métodos comprovados de Terapia Cognitivo-Comportamental para identificar e desafiar padrões de pensamento negativos, desenvolvendo perspectivas mais saudáveis.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">😊</div>
+                    <h3>Detecção de Humor</h3>
+                    <p>IA avançada analisa suas mensagens para entender seu estado emocional e fornecer respostas apropriadas e personalizadas de apoio.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💙</div>
+                    <h3>Suporte Empático</h3>
+                    <p>Experimente conversas acolhedoras e sem julgamentos que validam seus sentimentos enquanto te guiam para estratégias positivas de saúde mental.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacidade Segura</h3>
+                    <p>Suas conversas são confidenciais e seguras. Compartilhe seus pensamentos e sentimentos em um espaço protegido e privado.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Acesso em Qualquer Lugar</h3>
+                    <p>Use como Progressive Web App (PWA) - instale no seu celular e acesse offline. Seu apoio emocional sempre à mão.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Crescimento Contínuo</h3>
+                    <p>Acompanhe seu progresso emocional ao longo do tempo e desenvolva resiliência com técnicas práticas e exercícios personalizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="section-title">Converse com o TerapiaBot v2</h2>
+            <p class="section-subtitle">Compartilhe seus pensamentos e sentimentos em um espaço seguro e acolhedor</p>
+            
+            <div class="chat-container">
+                <div class="chat-info">
+                    <div class="info-badge">
+                        <span class="status-dot"></span>
+                        Online e pronto para ajudar
+                    </div>
+                    <p class="chat-disclaimer">
+                        <strong>⚠️ Aviso Importante:</strong> O TerapiaBot v2 é uma ferramenta de apoio emocional e 
+                        <strong>não substitui</strong> atendimento profissional de saúde mental. Em caso de crise, 
+                        procure ajuda profissional imediatamente.
+                    </p>
+                </div>
+                
+                <!-- Embedded Chatbot -->
+                <div class="chatbot-embed">
+                    <iframe 
+                        src="https://apps.abacus.ai/chatllm/55337dc3e" 
+                        width="100%" 
+                        height="600px" 
+                        frameborder="0"
+                        allow="microphone; camera"
+                        title="TerapiaBot v2 Chat Interface">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para Começar Sua Jornada de Bem-Estar?</h2>
+            <p>Junte-se a milhares de pessoas que já estão cuidando da saúde mental com o TerapiaBot v2</p>
+            <a href="#chat" class="btn btn-primary btn-large">Começar Agora - É Gratuito</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TerapiaBot v2</h3>
+                    <p>Seu companheiro de bem-estar emocional com técnicas de TCC, disponível 24/7.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#chat">Começar Chat</a></li>
+                        <li><a href="https://github.com/95dfreitas-glitch/terapiabot-pwa">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>🆘 Recursos de Emergência</h4>
+                    <ul class="emergency-contacts">
+                        <li><strong>CVV:</strong> 188 (24h)</li>
+                        <li><strong>SAMU:</strong> 192</li>
+                        <li><strong>Emergência:</strong> 190/193</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TerapiaBot v2. Desenvolvido com 💙 para apoiar o bem-estar emocional.</p>
+                <p class="footer-disclaimer">
+                    Este serviço não substitui atendimento profissional de saúde mental.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Network Status Indicator -->
+    <div id="networkStatus" class="network-status" style="display: none;">
+        <span class="status-icon">📡</span>
+        <span class="status-text">Você está offline. Algumas funcionalidades podem estar limitadas.</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
